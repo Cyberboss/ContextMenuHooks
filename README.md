@@ -1,10 +1,12 @@
 # ContextMenuHooks
 
-A [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for [Resonite](https://resonite.com/) that allows the name of saved slots that are changed using the `OnSaving` Protoflux node to persist to the inventory rather than using their old name.
+A [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for [Resonite](https://resonite.com/) that creates a "ContextMenuHooks" dynamic variable space under your user for reading ContextMenu component data.
 
-This is to workaround the wontfix issues https://github.com/Yellow-Dog-Man/Resonite-Issues/issues/1343 and https://github.com/Yellow-Dog-Man/Resonite-Issues/issues/7363.
+## Provided Variables
 
-This may become obsolete once Molecule is implemented: https://github.com/Yellow-Dog-Man/Resonite-Issues/issues/1212
+### ContextMenuHooks/SelectedItem
+
+Reference to the `ContextMenuItem` that is currently highlighted (`ReferenceCopy` of `ContextMenu._selectedItem`).
 
 ## Installation
 1. Install [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader).
