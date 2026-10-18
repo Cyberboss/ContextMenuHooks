@@ -14,7 +14,7 @@ namespace ContextMenuHooks
 
 		internal const string Description = "A resonite mod that creates a \"ContextMenuHooks\" dynamic variable space for reading ContextMenu component data.";
 
-		internal const string VersionConstant = "1.0.0";
+		internal const string VersionConstant = "2.0.0";
 
 		private const string DynamicVariableSpaceName = "ContextMenuHooks";
 
@@ -52,6 +52,7 @@ namespace ContextMenuHooks
 
 				var dynVarSpace = instanceSlot.AttachComponent<DynamicVariableSpace>();
 				dynVarSpace.SpaceName.Value = DynamicVariableSpaceName;
+				dynVarSpace.OnlyDirectBinding.Value = true;
 			}
 		}
 
